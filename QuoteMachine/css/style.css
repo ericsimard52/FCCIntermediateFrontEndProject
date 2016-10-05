@@ -8,3 +8,6 @@ body{
     font-family: "Ruslan Display", cursive;
     font-size:28px;
 }
+#imgRefresh{
+    cursor:pointer;
+}
