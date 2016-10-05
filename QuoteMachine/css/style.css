@@ -1,0 +1,10 @@
+body{
+    background-color: #ECECEA !important;
+}
+#quoteRow{
+    margin-top:10%;
+}
+#quoteContent{
+    font-family: "Ruslan Display", cursive;
+    font-size:28px;
+}
