@@ -32,6 +32,7 @@ function quote(){
                 $("#quoteContent").html(_quote);
                 $("#quoteAuthor").html("--- "+_quoteAuthor);
                 $("#quoteRow").fadeIn("slow");
+                $("#tweetThis").attr("href","https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="+_quote+" ---"+_quoteAuthor);
             })
             
         });
