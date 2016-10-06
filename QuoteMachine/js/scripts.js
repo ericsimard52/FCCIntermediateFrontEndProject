@@ -1,5 +1,4 @@
 
-var log = console.log;//To ease change from rhino and browser.
 
 function quote(){
 
@@ -38,6 +37,7 @@ function quote(){
                 _quoteAuthor = data.author;
 
                 $("#tweetThis").attr("href","https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="+_quote+" ---"+_quoteAuthor);
+                $("#tweetThis").attr("target","_blank");
             }),
             complete:(function(){
                 fadeInQuote();
@@ -108,7 +108,7 @@ function quote(){
 
 //testQuotes();
 var myQuote = new quote();
-log(myQuote);
+
 myQuote.SetApi("https://andruxnet-random-famous-quotes.p.mashape.com/");
 $(document).ready(function(){
     myQuote.GetQuote();
