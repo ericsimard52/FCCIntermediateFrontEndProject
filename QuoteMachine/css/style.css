@@ -1,6 +1,15 @@
 body{
     background-color: #ECECEA !important;
 }
+.footer{
+    font-family: "Montserrat", sans-serif;
+    font-size:12px;
+    text-align:center;
+}
+.credit{
+    font-size:8px !important;
+    margin-top:0.5em;
+}
 #quoteRow{
     margin-top:10%;
 }

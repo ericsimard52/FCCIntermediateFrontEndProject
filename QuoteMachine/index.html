@@ -9,6 +9,8 @@
 
     <!-- Include google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
     <!-- FontAwsome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     
@@ -19,33 +21,67 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+    
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!-- My JS -->
     <script src="js/scripts.js"></script>
+    
+    </head>
+    
+    <body>
+    
+        <div class="row" id="quoteRow">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div id="content">
+                    <span class="text-success" id="quoteContent"></span><br/>
+                    <span class="text-info pull-right" id="quoteAuthor"></span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <img class="img-responsive center-block" src="/images/refresh.png" id="imgRefresh" onclick="myQuote.GetQuote()">
+                <button type="button" class="btn btn-info center-block">
+                    <a href="" id="tweetThis" class="twitter-share-button" data-show-count="false"><span class="fa fa-twitter"> Tweet</span></a>
+                </button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
 
-  </head>
+        <div class="row footer">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="fa fa-terminal"></span>
+                        <span class="text-muted"> By Eric Simard</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="mailto:ericsimard52@gmail.com" class="fa fa-envelope"><span class="text-muted footer"> ericsimard52@gmail.com</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 credit">
+                        <p>
+                            Quotes Api provided by:
+                            <a href="https://andruxnet-random-famous-quotes.p.mashape.com/">AndruxNet</a>
+                            <br/>
+                            Refresh Icon provided by:
+                            <a href="https://www.iconfinder.com">IconFinder</a>
+                            <br/>
+                            Licenses information:
+                            <a href="https://creativecommons.org/licenses/by-nc/3.0/nl/deed.en_GB">License</a>
+                        </p>
+                    </div>
+                </div>
+                                
+            </div>
+        </div>
 
-  <body id="myBody">
-
-      <div class="row" id="quoteRow">
-          <div class="col-md-2"></div>
-          <div class="col-md-6" id="content">
-              <span class="text-success" id="quoteContent"></span><br/>
-              <span class="text-info pull-right" id="quoteAuthor"></span>
-          </div>
-          <div class="col-md-2">
-              <img class="img-responsive" src="/images/refresh.png" id="imgRefresh" onclick="myQuote.GetQuote()">
-              <a href="" id="tweetThis" class="twitter-share-button" data-show-count="false"><ul><li class="fa fa-twitter">Tweet</li></ul></a>
-              
-
-          </div>
-          <div class="col-md-2"></div>
-      </div>
   </body>
 </html>
