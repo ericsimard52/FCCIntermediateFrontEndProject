@@ -11,6 +11,9 @@ function quote(){
     //Methods
 
     GetQuote = function (){
+        $("#quoteControls").addClass("blanket");
+        $("#imgRefresh").addClass("blocked");
+        $("#tweetBtn").addClass("blocked");
         if ($("#quoteContent").html().length > 0)
             fadeOutQuote();
         else
@@ -39,6 +42,7 @@ function quote(){
             complete:(function(){
                 fadeInQuote();
                 $("#quoteAuthor").html("--- "+_quoteAuthor);
+
             })
             
         });
@@ -68,7 +72,12 @@ function quote(){
         var i = setInterval(function () {
             newStr[c].appendTo(dest).hide().fadeIn(200);
             c += 1;
-            if (c >= newStr.length) clearInterval(i);
+            if (c >= newStr.length) {
+                clearInterval(i);
+                $("#quoteControls").removeClass("blanket");
+                $("#tweetBtn").removeClass("blocked");
+                $("#imgRefresh").removeClass("blocked");
+            }
         }, 50);
 
     }
