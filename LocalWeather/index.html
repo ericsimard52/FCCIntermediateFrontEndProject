@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Your Weather </title>
+        
+        <!-- Include google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Amita:700" rel="stylesheet">
+
+        
+        <!-- FontAwsome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        
+        
+<!-- Latest compiled and minified CSS -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- My JS -->
+        <script src="js/scripts.js"></script>
+    </head>
+    
+    <body class="container-fluid">
+        <div class="row" id="mainRow">
+            <div class="col-md-1"></div>
+            <div class="col-md-6 col-md-push-4">
+                <div class="row">
+                    
+                    <div class="col-md-11"> <!-- Display temperature -->
+                        <h1 class="info" id="locationName">
+                            Pohénégamook
+                        </h1>
+                        
+                        <div class="well"><!-- Temp -->
+                            <div class="row">
+                                <div class="col-md-2 col-xs-1"></div>
+                                <div class="col-md-4 col-xs-6">
+                                    <h3 class="info" id="temp">
+                                        <label id="tempLevel" data-type="c"></label> <label class="text-info" id="tempValue">&#8451</label>
+                                    </h3>
+                                    <p class="info" id="desc">
+                                        Sunny Sky
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="img-responsive pull-right" src="images/statusSunny.png">
+                                </div>
+                                <div class="col-md-2 col-xs-1"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> <!-- Display wind -->
+                        
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-md-5 col-xs-4">
+                                    <img class="img-responsive" id="imgWind" src="images/wind.png">
+                                </div>
+                                <div class="col-md-7 col-xs-8 text-center">
+                                    <h3 class="info">Wind gust</h3>
+                                    <label class="info" id="wind">
+                                        3 Km/h
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-5"> <!-- Display humidity -->
+                        
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-md-5 col-xs-4">
+                                    <img class="img-responsive" id="imgHum" src="images/humidity.png">
+                                </div>
+                                <div class="col-md-7 col-xs-8 text-center">
+                                    <h3 class="info">Humidity</h3>
+                                    <label class="info" id="hum">
+                                        32%
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-pull-6 credit" id="mainCredit">
+                <div class="well" id="wellCredit">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="fa fa-terminal"></span>
+                            <span class="text-success"> By Eric Simard</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="mailto:ericsimard52@gmail.com" class="fa fa-envelope"><span class="text-success footer"> ericsimard52@gmail.com</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 credit text-muted">
+                            <p>
+                                Weather Api provided by:
+                                <a href="https://openweathermap.org">OpenWeatherMap</a>
+                                <br/>
+                            </p>
+                            <p>
+                                <div>Humidity index icon made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                                
+                                <label>Background provided by:
+                                    <a href='http://www.freepik.com/free-vector/abstract-blur-lights-background_850962.htm'>Designed by Freepik</a>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            
+        </div>
+        
+    </body>
+    
+</html>

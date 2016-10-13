@@ -1,0 +1,58 @@
+body{
+    background: url("/images/background.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+
+.credit{
+    font-size:10px !important;
+    margin-top:0.5em;
+    font-family: "Montserrat", sans-serif;
+    text-align:center;
+
+}
+
+.info{
+    font-family: 'Amita', cursive;
+}
+
+#temp{
+    font-size:2.6em;
+}
+
+#desc{
+    font-size:2em;
+}
+
+#locationName{
+    font-size:3.4em;
+    margin-left:0.5em;
+}
+
+#wind, #hum{
+    font-size:2em;
+}
+
+#mainRow{
+    margin-top:10%;
+}
+
+#mainCredit{
+    margin-top:15%;
+}
+
+#wellCredit{
+    background-color: #424851;
+}
+
+#tempValue{
+    cursor: pointer;
+    
+}
+.well{
+    border-radius:25%;
+    /*    background-color:#97a1b2;*/
+    background-color:#9eb0c1;
+    border-color:#09ba70;
+    border-width:2px;
+    box-shadow: 0 0 10px #9ecaed;
+}
